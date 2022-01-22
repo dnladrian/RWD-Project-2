@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+ 
+<!-- costum css -->
+<link rel="stylesheet" href="style.css">
+<!-- CSS -->
+
+<title>Form Registrasi</title>
+<style>
+@font-face {
+            font-family: 'siumniBiasa';
+            src: url('font-biasa.ttf') format('trueType');
+        }
+
+        @font-face {
+            font-family: 'siumniBold';
+            src: url('font-bold.ttf') format('trueType');
+        }
+
+        *{
+            font-size: 15px;
+            font-family: 'siumniBold';
+        }
+
+        button{
+            text-decoration: none;
+        }
+
+        nav{
+            background-color: #212121;
+        }
+
+        .navbar a {
+            padding: 0px 20px;
+            text-decoration: none;
+            color: #FFC700;
+        }
+    
+        .navbar img{
+            width: 150px;
+            margin: 20px 20px 0px -10px;
+        }
+
+        .navbar button{
+            background-color: #FFC700;
+            color: #212121;
+            padding: 5px 20px;
+            border-radius: 10px;
+        }
+    
+        .card-body {
+            background-color: #FFC700;
+            color: #212121;
+        }
+
+        .card-body img{
+            width: 170px;
+            margin-bottom: 30px;
+        }
+
+        .card-body button{
+            width: 100%;
+            background-color: #212121;
+            color: #FFF;
+        }
+
+        .card-body input{
+            background-color: #FFC700;
+            border: 2px solid #212121;
+        }
+
+        .card-body .regis{
+            margin: 10px;
+            font-family: 'siumniBiasa';
+        }
+
+        .card-body a{
+            color: #212121;
+            font-family: 'siumniBold';
+            font-weight: 900;
+        }
+
+
+
+/* mengatur warna backgroud dan padding pada tag body bagian atas agar form tidak menempel diatas */
+body{
+    background: #fff;
+    padding-top: 0vh;  
+}
+ 
+/* mengatur warna backgroud form */
+form{
+    background:#FFC700;
+}
+ 
+/* mengatur border dan padding class form-container */
+.form-container{
+    border-radius: 20px;
+    padding: 30px;
+}
+.form-control{
+    padding: 1pt;
+
+    border-radius: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-width: medium;
+    border-bottom-color: black;
+    background: border-box;
+}
+.search{
+    width: 200px;
+    text-align: center;
+}
+</style>
+</head>
+  
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+        <a class="navbar-brand" href="file:///C:/xampp/htdocs/Program%20Web/Project%202/Landing%20Page.html">
+            <img src="siumniUtama.png" alt="">
+        </a>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg">
+        <!-- Container wrapper -->
+        <div class="container">
+        <!-- Navbar brand -->
+        <div class="row">
+            <a href="file:///C:/xampp/htdocs/Program%20Web/Project%202/Landing%20Page.html">SIUMNI - STT NF</a>
+        </div>
+        <div class="row">
+        
+            <!-- Toggle button -->
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarButtonsExample"
+                aria-controls="navbarButtonsExample"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <i class="fas fa-bars"></i>
+            </button>
+        
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                            
+                <div class="d-flex align-items-center">
+                <a href="file:///C:/xampp/htdocs/Program%20Web/Project%202/Landing%20Page.html">BERANDA</a>
+                <a href="file:///C:/xampp/htdocs/Program%20Web/Project%202/Landing%20Page.html#berita">BERITA</a>
+                <a href="file:///C:/xampp/htdocs/Program%20Web/Project%202/Landing%20Page.html#loker">LOKER</a>
+                <a type="button" class="btn me-3 text-dark" href="C:/xampp/htdocs/Program%20Web/Project%202/index.html?#" style="background-color: #FFC700;">
+                    Login</a>
+                </button>
+                </div>
+            </div>
+        </div>
+        <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+
+    <!-- Nu urang -->
+    <section class="container-fluid mt-5 mb-4">
+        <!-- justify-content-center untuk mengatur posisi form agar berada di tengah-tengah -->
+        <section class="row justify-content-center">
+        <section class="col-12 col-sm-6 col-md-4">
+            <form class="form-container">
+                <a class="navbar-brand" href="#">
+                    <img src="Image/siumniSekunder.png" alt="" width="170" class="d-inline-block mt-2" style="margin-left: 6em;">
+                  </a>
+                <!-- Search input -->
+                <div class="container">
+                    <!-- <button class="btn text-primary" type="submit"><i class="fas fa-search fa-lg"></i></button> -->
+                    <input type="text" class="search mt-3" placeholder="Search"
+                     aria-label="Search" style="border-radius: 20px; background: #000; margin-left: 4em;" aria-describedby="button-addon1">
+                  </div>
+                <!-- End Search -->
+                
+                    <label for="name"></label>
+                    <span type="" class="form-control" id="name" ><h5>Nama Alumni</h5></span>
+                    <!-- <input type="" class="form-control" id="name" placeholder="Nama Alumni"> -->
+                </div>
+                <div class="form-group">
+                    <label for="..."></label>
+                    <span type="email" class="form-control" id="..."><h5>Asal Prodi</h5></span>
+                    <!-- <input type="email" class="form-control" id="..." placeholder="Asal Prodi"> -->
+                </div>
+                <div class="form-group">
+                    <label for="name"></label>
+                    <input type="text" class="form-control" id="username" placeholder="Username">
+                </div>
+                <div class="form-group">
+                    <label for="InputPassword"></label>
+                    <input type="password" class="form-control" id="InputPassword" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="InputPassword"></label>
+                    <input type="password" class="form-control" id="InputRePassword" placeholder="Re-Password">
+                </div>
+                <button type="submit" class="btn btn-dark btn-block">Register</button>
+                <div class="form-footer mt-2">
+                    <p> Sudah punya account? <a href="C:/xampp/htdocs/Program%20Web/Project%202/index.html?#">Login</a></p>
+                </div>
+            </form>
+        </section>
+        </section>
+    </section>
+ 
+    <!-- Bootstrap requirement jQuery pada posisi pertama, kemudian Popper.js, danyang terakhit Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        @font-face {
+            font-family: 'siumniBiasa';
+            src: url('font-biasa.ttf') format('trueType');
+        }
+
+        @font-face {
+            font-family: 'siumniBold';
+            src: url('font-bold.ttf') format('trueType');
+        }
+
+        *{
+            font-size: 15px;
+            font-family: 'siumniBold';
+        }
+
+        button{
+            text-decoration: none;
+        }
+
+        nav{
+            background-color: #212121;
+        }
+
+        .navbar a {
+            padding: 0px 20px;
+            text-decoration: none;
+            color: #FFC700;
+        }
+    
+        .navbar img{
+            width: 150px;
+            margin: 20px 20px 0px -10px;
+        }
+
+        .navbar button{
+            background-color: #FFC700;
+            color: #212121;
+            padding: 5px 20px;
+            border-radius: 10px;
+        }
+    
+        .card-body {
+            background-color: #FFC700;
+            color: #212121;
+        }
+
+        .card-body img{
+            width: 170px;
+            margin-bottom: 30px;
+        }
+
+        .card-body button{
+            width: 100%;
+            background-color: #212121;
+            color: #FFF;
+        }
+
+        .card-body input{
+            background-color: #FFC700;
+            border: 2px solid #212121;
+        }
+
+        .card-body .regis{
+            margin: 10px;
+            font-family: 'siumniBiasa';
+        }
+
+        .card-body a{
+            color: #212121;
+            font-family: 'siumniBold';
+            font-weight: 900;
+        }
+    </style>
+
+
+    <title>SIUMNI Login</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+        <nav class="navbar">
+            <div class="container">
+            <a class="navbar-brand" href="file:///C:/xampp/htdocs/Program%20Web/Project%202/Landing%20Page.html">
+                <img src="siumniUtama.png" alt="">
+            </a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg">
+            <!-- Container wrapper -->
+            <div class="container">
+            <!-- Navbar brand -->
+            <div class="row">
+                <a href="file:///C:/xampp/htdocs/Program%20Web/Project%202/Landing%20Page.html">SIUMNI - STT NF</a>
+            </div>
+            <div class="row">
+            
+                <!-- Toggle button -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-mdb-toggle="collapse"
+                    data-mdb-target="#navbarButtonsExample"
+                    aria-controls="navbarButtonsExample"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <i class="fas fa-bars"></i>
+                </button>
+            
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                                
+                    <div class="d-flex align-items-center">
+                    <a href="file:///C:/xampp/htdocs/Program%20Web/Project%202/Landing%20Page.html">BERANDA</a>
+                    <a href="file:///C:/xampp/htdocs/Program%20Web/Project%202/Landing%20Page.html#berita">BERITA</a>
+                    <a href="file:///C:/xampp/htdocs/Program%20Web/Project%202/Landing%20Page.html#loker">LOKER</a>
+                    <a type="button" class="btn me-3 text-dark" href="C:/xampp/htdocs/Program%20Web/Project%202/Sketsa.html?#" style="background-color: #FFC700;">
+                        Register</a>
+                    </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Collapsible wrapper -->
+            </div>
+            <!-- Container wrapper -->
+        </nav>
+        <!-- Navbar -->
+
+
+        <section class="vh-50">
+            <div class="container py-5 h-100">
+              <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                  <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                    <div class="card-body p-5 text-center">
+          
+                      <img src="siumniSekunder.png" alt="">
+          
+                      <div class="form-outline mb-2">
+                        <input type="username" id="typeUsernameX-2" class="form-control form-control-lg" placeholder="Username"/>
+                        <label class="form-label" for="typeUsernameX-2">Username</label>
+                      </div>
+          
+                      <div class="form-outline mb-2">
+                        <input type="password" id="typePasswordX-2" class="form-control form-control-lg" placeholder="Password"/>
+                        <label class="form-label" for="typePasswordX-2">Password</label>
+                      </div>
+          
+          
+                      <button class="btn btn-lg btn-block" type="submit">LOGIN</button>
+
+                      <div class="regis">Belum punya akun? 
+                          <a href="C:/xampp/htdocs/Program%20Web/Project%202/Sketsa.html?#">Registrasi</a></div>
+        
+          
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
